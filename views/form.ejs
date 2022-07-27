@@ -1,0 +1,55 @@
+<%- include('navbar') %>
+
+
+  <!-- content -->
+<div class="container" style="min-height: 100vh;">
+    <div class="row-cols-6 mt-5">
+
+        <div><span><i class="bi bi-arrow-left-short" ></i></span><a href="/tampil">Home</a></div>
+        <form class="row g-3 needs-validation border border-secondary bg-light py-5" method="post" action="/adduser" novalidate>
+            <div class="col-6">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="First Name" name="first_name">
+                    <label for="floatingInput">First Name</label>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Last Name" name="last_name">
+                    <label for="floatingInput">Last Name</label>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="email@email.com" name="email">
+                    <label for="floatingInput">Email</label>
+                </div>
+            </div>
+        
+            <div class="col-6">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Phone" name="phone">
+                    <label for="floatingInput">Phone</label>
+                </div>
+            </div>
+        
+            <div class="col-12">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="address" name="address">
+                    <label for="floatingInput">address</label>
+                </div>
+            </div>
+            <div class="col-12 d-grid">
+                <button class="btn btn-primary " type="submit">Submit</button>
+            </div>
+        
+        </form>
+    </div>
+</div>
+<script>
+
+
+</script>
+
+
+<%- include('footer') %>
